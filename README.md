@@ -1,6 +1,6 @@
 # E-Commerce Store
 
-This is an e-commerce app that allows users to add products to the cart and make payments. It is built using React Components and a Redux store to store the items. Fake Store API is used to import the products and categories. Stripe API is used to make payments.
+This is an e-commerce app that allows users to add products to the cart and make payments. It is built using React Components and a Redux store to store the items. Fake Store API is used to import the products and categories. Stripe API is used to make payments. A Node.js server is used to process the payments.
 
 ## Getting Started
 
