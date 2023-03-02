@@ -16,7 +16,9 @@ app.use(cors());
 app.post("/payment", cors(), async (req, res) => {
   let { amount, id } = req.body;
 
-  const customer = await stripe.customers.create();
+  const customer = await stripe.customers.create({
+    email: "customer@example.com",
+  });
 
   try {
     const payment = await stripe.paymentIntents.create({
@@ -42,7 +44,7 @@ app.post("/payment", cors(), async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`SERVER RUNNING ON PORT: ${PORT}`);

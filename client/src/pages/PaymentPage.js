@@ -55,7 +55,7 @@ const PaymentPage = () => {
     if (!error && totalPrice !== 0) {
       try {
         const { id } = paymentMethod;
-        const response = await axios.post(`/payment`, {
+        const response = await axios.post("/payment", {
           amount: Math.round(totalPrice * 100),
           id,
         });

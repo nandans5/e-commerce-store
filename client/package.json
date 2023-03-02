@@ -2,7 +2,7 @@
   "name": "e-commerece",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://172.17.0.2:3000",
+  "proxy": "http://192.168.1.83:5000",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
